@@ -1,0 +1,11 @@
+{
+  "name": "AsposeAlpineTest",
+  "version": "1.0.0",
+  "description": "Testing Aspose hosted in Alpine container",
+  "repository": "https://github.com/mariusandersen/AsposeAlpineTest.git",
+  "author": "Marius Andersen",
+  "license": "MIT",
+  "scripts": {
+		"publish": "dotnet publish AsposeAlpineTest.csproj --configuration Release --runtime linux-musl-x64 --self-contained=true /p:PackageAsSingleFile=false /p:PublishTrimmed=true --output bin/Release/PublishOutput/Linux/AsposeAlpineTest",
+	}
+}
